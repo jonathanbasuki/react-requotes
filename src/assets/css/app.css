@@ -1,0 +1,38 @@
+#root {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #212529;
+}
+
+.badge {
+  margin-right: 10px;
+}
+
+#tag-keyword {
+  height: 3rem;
+  color: #f1f1f1;
+  background-color: #242424;
+  border-radius: 50px;
+  text-align: center;
+}
+
+#tag-keyword::placeholder {
+  font-size: 0.9rem;
+  color: #c2c2c2;
+  text-align: center;
+}
+
+.card-header {
+  border-bottom: 1px solid #c2c2c2;
+}
+
+.copyright a {
+  text-decoration: none;
+}
+
+.navbar .nav-link:active {
+  color: #000;
+}
