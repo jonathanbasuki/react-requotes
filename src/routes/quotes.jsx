@@ -22,7 +22,7 @@ export default function Quotes() {
 
         setSearchHint(keyword ? `Exploring the world of "${keyword}" quotes? Here are some curated gems just for you.` : 'While you ponder the mysteries of life, allow us to share some insightful quote for you.');
 
-        getQuoteData(URL + `&tags=${keyword}`)
+        getQuoteData(URL + `&tags=${keyword}`);
     }
 
     useEffect(() => {

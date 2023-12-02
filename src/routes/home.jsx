@@ -18,14 +18,22 @@ export default function Home() {
 
     return (
         <>
-            <h1 className='text-light fs-2 mt-4'>
-                ReQuotes x Quotable
-            </h1>
+            <blockquote className="blockquote mb-2">
+                <p>
+                    {" "}
+                    <h1 className='text-light fs-2'>
+                        ReQuotes
+                    </h1>{" "}
+                </p>
+                <footer className="blockquote-footer mt-1">
+                    a simple React.JS and Quotable API integration.
+                </footer>
+            </blockquote>
 
             <Row>
                 <Col md={2}></Col>
                 <Col md={8}>
-                    <Card className="mt-4 mb-3" bg="dark" border="light">
+                    <Card className="mt-3 mb-3" bg="dark" border="light">
                         <Card.Body className="text-light">
                             <blockquote className="blockquote mb-0">
                                 <p>
