@@ -1,6 +1,6 @@
 import TagBadge from '../components/tag_badge';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Row, Col, Card, Form } from 'react-bootstrap';
 
 export default function Quotes() {
@@ -16,8 +16,6 @@ export default function Quotes() {
     }
 
     const submitSearchTag = (event) => {
-        // const TAG_URL = "https://api.quotable.io/quotes/random?"
-
         event.preventDefault();
 
         const keyword = event.target.elements['tag-keyword'].value;
@@ -27,7 +25,7 @@ export default function Quotes() {
         getQuoteData(URL + `&tags=${keyword}`)
     }
 
-    useState(() => {
+    useEffect(() => {
         getQuoteData(URL);
     }, []);
 
